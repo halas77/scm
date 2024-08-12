@@ -1,8 +1,8 @@
-# Simple SCM
+# Simple PMS
 
 ## Overview
 
-The **Simple SCM** project is a demonstration of Solidity fundamentals through a basic product management system. This project covers key Solidity concepts including variables, structs, mappings, inheritance, functions, events, and modifiers. The goal is to showcase these basics in a practical example.
+The **Simple PMS** project is a demonstration of Solidity fundamentals through a basic product management system. This project covers key Solidity concepts including variables, structs, mappings, inheritance, functions, events, and modifiers. The goal is to showcase these basics in a practical example.
 
 ## Features
 
