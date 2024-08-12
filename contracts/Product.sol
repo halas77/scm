@@ -2,12 +2,12 @@
 pragma solidity ^0.8.23;
 
 // Contract for managing products, inherits from Ownable
-contract Product{
+contract Product {
     // Struct to store product details
     struct ProductItem {
         string name;
         uint256 productCode;
-        bool isStored;
+        bool isExist;
     }
 
     // Counter for product index
@@ -24,7 +24,7 @@ contract Product{
         productMapping[index] = ProductItem({
             name: _name,
             productCode: _productCode,
-            isStored: false
+            isExist: false
         });
 
         // Increment the index for the next product
@@ -34,9 +34,9 @@ contract Product{
     // Function to mark a product as shipped
     function shipProduct(uint256 _index) public {
         require(_index < index, "Invalid product index");
-        require(!productMapping[_index].isStored, "Product already shipped");
+        require(!productMapping[_index].isExist, "Product already shipped");
 
         // Mark the product as shipped
-        productMapping[_index].isStored = true;
+        productMapping[_index].isExist = true;
     }
 }
